@@ -47,16 +47,17 @@ case $op in
   sudo pacman -S base-devel procps-ng curl file git &&
   test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
   test -d /home/linuxbrew/.linuxbrew && 
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &&
+  sudo pacman -S fzf 
   ;;
-
 3)
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&&
   sudo yum groupinstall 'Development Tools' &&
     sudo yum install procps-ng curl file git &&
     test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
     test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &&
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&&
+    dnf install fzf
   ;;
 4)
   exit
