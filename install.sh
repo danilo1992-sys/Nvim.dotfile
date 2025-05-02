@@ -43,6 +43,7 @@ case $op in
     apt install fzf
   ;;
 2)
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&&
   sudo pacman -S base-devel procps-ng curl file git &&
     test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
     test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &&
@@ -50,6 +51,7 @@ case $op in
   ;;
 
 3)
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&&
   sudo yum groupinstall 'Development Tools' &&
     sudo yum install procps-ng curl file git &&
     test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
