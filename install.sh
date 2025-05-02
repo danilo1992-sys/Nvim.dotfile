@@ -34,17 +34,19 @@ echo -e " 4) ${Green}salir del menu ${NC}"
 read -p "Seleccione una opcion: " op
 case $op in
 1)
+ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&&
+  sudo apt-get update -y &&
+  sudo apt-get upgrade -y &&
   sudo apt-get install build-essential procps curl file git &&
     test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
-    test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &&
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" &&
-    apt install fzf &&
+    test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && 
+    apt install fzf
   ;;
 2)
   sudo pacman -S base-devel procps-ng curl file git &&
     test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
     test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &&
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   
   ;;
 
 3)
