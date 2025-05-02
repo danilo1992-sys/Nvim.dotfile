@@ -45,9 +45,9 @@ case $op in
 2)
  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"&&
   sudo pacman -S base-devel procps-ng curl file git &&
-    test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
-    test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" &&
-   
+  test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)" &&
+  test -d /home/linuxbrew/.linuxbrew && 
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
   ;;
 
 3)
