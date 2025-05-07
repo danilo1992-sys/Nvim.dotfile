@@ -5,11 +5,17 @@ starship init fish | source
 
 #Alias 
 alias fn='fnm env --use-on-cd --shell fish | source'
+alias sa='agent && ssh-add ~/.ssh/Ubuntu'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias ls='lsd'
 alias n='/usr/bin/nvim.appimage'
 alias rspack='pnpm create rsbuild@latest'
+alias flowbite="npx create-flowbite-react@latest"
+alias sf='source /home/danilo/.config/fish/config.fish'
+alias nf='n /home/danilo/.config/fish/config.fish'
+alias cat='bat'
+alias man='tldr'
 
 #Keys 
 #bind --key ctrl-f ranger
@@ -51,6 +57,5 @@ export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
 # pnpm
 set -gx PNPM_HOME "/home/danilo/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
-# pnpm end
