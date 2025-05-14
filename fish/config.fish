@@ -4,8 +4,7 @@ end
 starship init fish | source
 
 #Alias 
-alias fn='fnm env --use-on-cd --shell fish | source'
-alias sa='agent && ssh-add ~/.ssh/Ubuntu'
+alias ss='agent && ssh-add ~/.ssh/Ubuntu'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias ls='lsd'
@@ -16,6 +15,8 @@ alias sf='source /home/danilo/.config/fish/config.fish'
 alias nf='n /home/danilo/.config/fish/config.fish'
 alias cat='bat'
 alias man='tldr'
+alias astro='npx astro@latest'
+alias angular='ng new'
 
 #Keys 
 #bind --key ctrl-f ranger
