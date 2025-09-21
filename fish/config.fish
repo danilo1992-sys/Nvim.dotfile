@@ -2,6 +2,7 @@ if status is-interactive
 
 end
 starship init fish | source
+zoxide init fish | source
 
 #Alias 
 alias ss='agent && ssh-add ~/.ssh/Ubuntu'
@@ -10,13 +11,14 @@ alias ld='lazydocker'
 alias ls='lsd'
 alias n='/usr/bin/nvim.appimage'
 alias rspack='pnpm create rsbuild@latest'
-alias flowbite="npx create-flowbite-react@latest"
+alias flowbite="pnpx create-flowbite-react@latest"
 alias sf='source /home/danilo/.config/fish/config.fish'
 alias nf='n /home/danilo/.config/fish/config.fish'
 alias cat='bat'
 alias man='tldr'
-alias astro='npx astro@latest'
+alias astro='pnpm create astro@latest'
 alias angular='ng new'
+alias pyv="/home/danilo/.config/fish/pyv.sh"
 
 #Keys 
 #bind --key ctrl-f ranger
