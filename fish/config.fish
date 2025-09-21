@@ -5,11 +5,11 @@ starship init fish | source
 zoxide init fish | source
 
 #Alias 
-alias ss='agent && ssh-add ~/.ssh/Ubuntu'
+alias ss='ssh-agent -c && ssh-add ~/.ssh/Ubuntu'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias ls='lsd'
-alias n='/usr/bin/nvim.appimage'
+alias n='nvim'
 alias rspack='pnpm create rsbuild@latest'
 alias flowbite="pnpx create-flowbite-react@latest"
 alias sf='source /home/danilo/.config/fish/config.fish'
